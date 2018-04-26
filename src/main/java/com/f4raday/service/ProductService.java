@@ -20,7 +20,7 @@ public class ProductService implements IProductService {
 
     @Override
     public void save(Product product) {
-        logger.debug(String.format("Product %s added to the databse"), product.getDescription());
+        logger.debug(String.format("Product %s added to the databse", product.getDescription()));
         productRepository.save(product);
     }
 
